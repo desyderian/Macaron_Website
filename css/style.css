@@ -1,0 +1,575 @@
+:root {
+  --primary: rgb(122, 73, 87);
+  --bg: rgb(255, 225, 230);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "source sans pro", sans-serif;
+  background-color: rgb(255, 225, 230);
+  color: rgb(122, 73, 87);
+  min-height: 3900px;
+}
+
+footer{
+  text-align: center;
+  padding: 7px;
+  background-color: var(--bg);
+  color: rgb(255, 16, 128);
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(252, 113, 136, 0.753);
+  border-bottom: 3px solid rgb(255, 92, 119);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 900;
+  color: aliceblue;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: inline-block;
+  margin: 0 2rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: rgb(53, 6, 21);
+}
+
+.navbar .navbar-icon a {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-icon a:hover {
+  color: var(--primary);
+}
+
+#menu {
+  display: none;
+}
+
+/* banner */
+.banner {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("/image/4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner .konten {
+  padding-top: 10rem 20%;
+  padding-left: 70rem;
+  max-width: 100rem;
+}
+
+.banner .konten h1 {
+  font-family: "source sans pro", sans-serif;
+  font-size: 3.5rem;
+  margin-top: 2rem;
+  color: rgb(248, 157, 172);
+  line-height: 3.5rem;
+  font-weight: 50rem;
+  text-shadow: 1px 1px 3px white;
+}
+
+.banner .konten h1 span {
+  color: rgb(90, 39, 48);
+  border-radius: 10px;
+}
+
+.banner .konten p {
+  font-family: "Franklin Gothic light", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  color: rgb(220, 111, 129);
+  line-height: 2rem;
+  font-weight: 30rem;
+  text-shadow: 1px 1px 3px white;
+}
+
+.banner .konten .menunih {
+  margin-top: 1.2rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgb(90, 39, 48);
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px white;
+}
+
+/* about */
+.about {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("/image/6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about .konten {
+  padding-top: 10rem 20%;
+  padding-left: 18rem;
+  max-width: 90rem;
+}
+
+.about .konten h1 {
+  font-family: "source sans pro", sans-serif;
+  font-size: 3.5rem;
+  margin-top: 2rem;
+  color: rgb(248, 157, 172);
+  line-height: 3.5rem;
+  font-weight: 50rem;
+  text-shadow: 1px 1px 3px white;
+}
+
+.about .konten h1 span {
+  color: rgb(90, 39, 48);
+  border-radius: 10px;
+}
+
+.about .konten h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}
+
+.about .konten p {
+  font-family: "Franklin Gothic light", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  color: rgb(220, 111, 129);
+  line-height: 1.5rem;
+  font-weight: 30rem;
+  text-shadow: 1px 1px 3px white;
+}
+
+/* varians */
+.varians {
+  background-image: url(/image/21.jpg);
+  min-height: 160vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.varians .konten h1 {
+  font-family: "source sans pro", sans-serif;
+  font-size: 3.5rem;
+  margin-top: 0rem;
+  padding-top: 100px;
+  padding-bottom: 0px;
+  padding-left: 5rem 10%;
+  padding-right: 5rem 10%;
+  color: rgb(248, 157, 172);
+  line-height: 3.5rem;
+  font-weight: 50rem;
+  text-shadow: 1px 1px 3px rgb(239, 182, 199);
+}
+
+.varians .konten h1 span {
+  color: var(--primary);
+}
+
+.varians .konten .var {
+  padding: 10px;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border: 2px solid pink;
+  float: left;
+  width: 180px;
+}
+
+.varians .konten .var hover {
+  border: 1px solid palevioletred;
+}
+
+.varians .konten .var img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5rem;
+}
+
+/* pick */
+.pick {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("/image/22.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pick img {
+  width: 210px;
+  height: 160px;
+  margin-left: 205px;
+  margin-top: 80px;
+  opacity: 0;
+}
+
+/* healthy */
+.healthy {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("/image/1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+
+.healthy .konten {
+  margin-left: 100px;
+  margin-top: 37px;
+}
+
+.healthy .konten h1 {
+  font-family: "source sans pro", sans-serif;
+  font-size: 4rem;
+  margin-top: 0rem;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: rgb(248, 157, 172);
+  line-height: 3.5rem;
+  font-weight: 50rem;
+  text-shadow: 1px 1px 3px rgb(239, 182, 199);
+}
+
+.healthy .konten h1 span {
+  color: var(--primary);
+  text-shadow: 1px 1px 3px rgb(255, 255, 255);
+}
+
+.healthy .konten h2 {
+  font-family: "source sans pro", sans-serif;
+  font-size: 3.2rem;
+  margin-top: 0rem;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  color: var(--primary);
+  line-height: 3rem;
+  font-weight: 50rem;
+  text-shadow: 1px 1px 3px rgb(255, 255, 255);
+}
+
+.healthy .konten h5 {
+  font-family: "source sans pro", sans-serif;
+  font-size: 15px;
+  margin-top: 0rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: var(--primary);
+  line-height: 2rem;
+  font-weight: 50rem;
+  text-shadow: 1px 1px 3px rgb(255, 255, 255);
+}
+
+.healthy .konten h4 {
+  font-family: "source sans pro", sans-serif;
+  font-size: 25px;
+  margin-top: 0rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: var(--primary);
+  line-height: 2rem;
+  font-weight: 50rem;
+  text-shadow: 1px 1px 3px rgb(255, 255, 255);
+}
+
+.healthy .konten table {
+  border-top: 7px solid var(--primary);
+  width: 280px;
+}
+
+.healthy .konten table tr td {
+  border-bottom: 1px solid rgb(167, 35, 79);
+  font-size: 15px;
+}
+
+/* author */
+.author {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("/image/23.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.author .konten {
+  margin-top: 75px;
+  margin-left: 300px;
+}
+
+.author wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.card {
+  width: 100%;
+  height: 350px;
+  max-width: 700px;
+  background: #FFF;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 60px -10px rgb(255, 178, 222);
+  margin: 70px 20px auto 20px ;
+}
+
+.img {
+  width: 120px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-50%);
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 5px 50px 0 rgb(255, 68, 121),
+              0 0 0 7px rgb(255, 158, 185);
+  transition: all 300ms;
+}
+
+.cnt {
+margin-top: -35px;
+padding: 0 20px;
+text-align: center;
+padding-bottom: 10px;
+transition: all 300ms;
+}
+
+.name {
+font-weight: 700;
+font-size: 30px;
+color:rgb(255, 68, 121);
+margin-bottom: 5px;
+margin-top: 0px;
+}
+
+.txt {
+font-weight: 500;
+font-size: 15px;
+margin-bottom: 15px;
+margin-top: 2px;
+}
+
+.card-inf {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 15px;
+}
+
+.item {
+padding: 5px 10px;
+min-width: 130px;
+}
+
+.title {
+font-weight: 700;
+font-size: 20px;
+}
+
+.card-social {
+margin-top: 0px;
+}
+
+.card-social a {
+display: inline-flex;
+width: 55px;
+height: 55px;
+margin: 20px;
+align-items: center;
+justify-content: center;
+color: #FFF;
+font-size: 20px;
+border-radius: 50%;
+text-decoration: none;
+transition: all 300ms;
+}
+
+.card-social .facebook {
+background: linear-gradient(45deg, #359, #07D);
+box-shadow: 0 4px 30px #26A8;
+}
+
+.card-social .instagram {
+background: linear-gradient(45deg, #45F, #F11);
+box-shadow: 0 4px 30px #B449;
+}
+.card-social .github {
+background: linear-gradient(45deg, #333, #667);
+box-shadow: 0 4px 30px #3449;
+}
+
+a:hover {
+transform: scale(1.2);
+}
+
+/* Setting Ukuran Layar */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  #menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgba(122, 28, 44, 0.731);
+    width: 30rem;
+    height: 100vh;
+    transition: 0.5s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: white;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a:hover {
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    color: rgb(53, 6, 21);
+    margin-left: 25px;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .banner .konten {
+    padding-left: 10%;
+    padding-right: 10%;
+    position: static;
+    background-color: rgba(230, 191, 213, 0.477);
+    height: 200px;
+  }
+
+  .about .konten {
+    padding: 10%;
+    position: static;
+  }
+
+  .varians {
+    height: 2450px;
+  }
+
+  .varians .konten h1 {
+    padding-top: 50px;
+  }
+
+  .varians .konten .var {
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: 75px;
+    margin-bottom: 20px;
+    border: 2px solid pink;
+    float: left;
+    width: 180px;
+  }
+
+  .healthy .konten {
+    background-color: rgba(252, 113, 136, 0.34);
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 40px;
+    height: 460px;
+    padding-left: 10px;
+  }
+
+  .pick img {
+    width: 150px;
+    height: 130px;
+    margin-left: 240px;
+    margin-bottom: 150px;
+    opacity: 0;
+  }
+
+  .author .konten {
+    margin-top: 30px;
+    margin-left: 10%;
+  }
+
+  .card {
+    width: 500px;
+    height: 350px;
+    max-width: 700px;
+    background: #FFF;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 60px -10px rgb(255, 178, 222);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .item {
+    padding-left: 0px 0px;
+    min-width: 100px;
+    }
+}
